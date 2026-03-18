@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0058-length-of-last-word](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0058-length-of-last-word) |
 | [0125-valid-palindrome](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0125-valid-palindrome) |
 | [0345-reverse-vowels-of-a-string](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0345-reverse-vowels-of-a-string) |
+| [0434-number-of-segments-in-a-string](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0434-number-of-segments-in-a-string) |
 ## Sorting
 |  |
 | ------- |
