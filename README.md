@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0049-group-anagrams](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0058-length-of-last-word) |
+| [0345-reverse-vowels-of-a-string](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0345-reverse-vowels-of-a-string) |
 ## Sorting
 |  |
 | ------- |
@@ -48,4 +49,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0347-top-k-frequent-elements) |
+## Two Pointers
+|  |
+| ------- |
+| [0345-reverse-vowels-of-a-string](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0345-reverse-vowels-of-a-string) |
 <!---LeetCode Topics End-->
