@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0347-top-k-frequent-elements) |
+| [1603-design-parking-system](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1603-design-parking-system) |
 ## Quickselect
 |  |
 | ------- |
@@ -56,4 +57,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0125-valid-palindrome](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0125-valid-palindrome) |
 | [0345-reverse-vowels-of-a-string](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0345-reverse-vowels-of-a-string) |
+## Design
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1603-design-parking-system) |
+## Simulation
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1603-design-parking-system) |
 <!---LeetCode Topics End-->
