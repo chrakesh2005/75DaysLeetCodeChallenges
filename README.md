@@ -81,4 +81,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1114-print-in-order](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1114-print-in-order) |
 | [1115-print-foobar-alternately](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1115-print-foobar-alternately) |
+| [1116-print-zero-even-odd](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1116-print-zero-even-odd) |
 <!---LeetCode Topics End-->
