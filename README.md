@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0347-top-k-frequent-elements) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0705-design-hashset](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0705-design-hashset) |
 ## Hash Table
 |  |
 | ------- |
@@ -17,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0347-top-k-frequent-elements) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0705-design-hashset](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0705-design-hashset) |
 ## String
 |  |
 | ------- |
@@ -60,9 +62,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0705-design-hashset](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0705-design-hashset) |
 | [1603-design-parking-system](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1603-design-parking-system) |
 ## Simulation
 |  |
 | ------- |
 | [1603-design-parking-system](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/1603-design-parking-system) |
+## Linked List
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0705-design-hashset) |
+## Hash Function
+|  |
+| ------- |
+| [0705-design-hashset](https://github.com/chrakesh2005/75DaysLeetCodeChallenges/tree/master/0705-design-hashset) |
 <!---LeetCode Topics End-->
