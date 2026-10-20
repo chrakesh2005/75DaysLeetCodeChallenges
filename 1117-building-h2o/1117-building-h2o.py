@@ -1,24 +1,22 @@
-from threading import Semaphore
+import threading
 
 class H2O:
     def __init__(self):
-        self.hydrogen_sem = Semaphore(2)
-        self.oxygen_sem = Semaphore(0)
-        self.lock = Semaphore(1)
-        self.h_count = 0
+        self.h_sem = threading.Semaphore(2)
+        self.o_sem = threading.Semaphore(1)
+        self.barrier = threading.Barrier(3)
 
-    def hydrogen(self, releaseHydrogen):
-        self.hydrogen_sem.acquire()
+    def hydrogen(self, releaseHydrogen) -> None:
+        self.h_sem.acquire()
+        self.barrier.wait()
         releaseHydrogen()
-        self.lock.acquire()
-        self.h_count += 1
-        if self.h_count == 2:
-            self.h_count = 0
-            self.oxygen_sem.release()
-        self.lock.release()
+        self.barrier.wait()
 
-    def oxygen(self, releaseOxygen):
-        self.oxygen_sem.acquire()
+    def oxygen(self, releaseOxygen) -> None:
+        self.o_sem.acquire()
+        self.barrier.wait()
         releaseOxygen()
-        self.hydrogen_sem.release()
-        self.hydrogen_sem.release()
+        self.barrier.wait()
+        self.h_sem.release()
+        self.h_sem.release()
+        self.o_sem.release()
