@@ -11,6 +11,7 @@ class ZeroEvenOdd:
         for i in range(1, self.n + 1):
             self.zero_sem.acquire()
             printNumber(0)
+
             if i % 2 == 1:
                 self.odd_sem.release()
             else:
