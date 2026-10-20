@@ -1,19 +1,20 @@
 import threading
 
 class Foo:
+
     def __init__(self):
-        self.first_done = threading.Semaphore(0)
-        self.second_done = threading.Semaphore(0)
+        self.second_semaphore = threading.Semaphore(0)
+        self.third_semaphore = threading.Semaphore(0)
 
-    def first(self, printFirst):
+    def first(self, printFirst) -> None:
         printFirst()
-        self.first_done.release()
+        self.second_semaphore.release()
 
-    def second(self, printSecond):
-        self.first_done.acquire()
+    def second(self, printSecond) -> None:
+        self.second_semaphore.acquire()
         printSecond()
-        self.second_done.release()
+        self.third_semaphore.release()
 
-    def third(self, printThird):
-        self.second_done.acquire()
+    def third(self, printThird) -> None:
+        self.third_semaphore.acquire()
         printThird()
