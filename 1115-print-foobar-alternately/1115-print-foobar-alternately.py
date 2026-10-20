@@ -3,17 +3,17 @@ import threading
 class FooBar:
     def __init__(self, n):
         self.n = n
-        self.foo_sem = threading.Semaphore(1)
-        self.bar_sem = threading.Semaphore(0)
+        self.foo_semaphore = threading.Semaphore(1)
+        self.bar_semaphore = threading.Semaphore(0)
 
-    def foo(self, printFoo):
+    def foo(self, printFoo) -> None:
         for i in range(self.n):
-            self.foo_sem.acquire()
+            self.foo_semaphore.acquire()
             printFoo()
-            self.bar_sem.release()
+            self.bar_semaphore.release()
 
-    def bar(self, printBar):
+    def bar(self, printBar) -> None:
         for i in range(self.n):
-            self.bar_sem.acquire()
+            self.bar_semaphore.acquire()
             printBar()
-            self.foo_sem.release()
+            self.foo_semaphore.release()
