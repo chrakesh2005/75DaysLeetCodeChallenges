@@ -1,55 +1,63 @@
-from threading import Condition
+import threading
 
 class FizzBuzz:
     def __init__(self, n):
         self.n = n
-        self.i = 1
-        self.condition = Condition()
+        self.current = 1
+        self.condition = threading.Condition()
 
-    def fizz(self, printFizz):
+    def fizz(self, printFizz) -> None:
         while True:
             with self.condition:
-                while self.i <= self.n and self.i % 3 == 0 and self.i % 5 != 0:
+                while self.current <= self.n and self.current % 3 == 0 and self.current % 5 != 0:
                     printFizz()
-                    self.i += 1
+                    self.current += 1
                     self.condition.notify_all()
-                if self.i > self.n:
+
+                if self.current > self.n:
                     self.condition.notify_all()
                     return
+
                 self.condition.wait()
 
-    def buzz(self, printBuzz):
+    def buzz(self, printBuzz) -> None:
         while True:
             with self.condition:
-                while self.i <= self.n and self.i % 5 == 0 and self.i % 3 != 0:
+                while self.current <= self.n and self.current % 5 == 0 and self.current % 3 != 0:
                     printBuzz()
-                    self.i += 1
+                    self.current += 1
                     self.condition.notify_all()
-                if self.i > self.n:
+
+                if self.current > self.n:
                     self.condition.notify_all()
                     return
+
                 self.condition.wait()
 
-    def fizzbuzz(self, printFizzBuzz):
+    def fizzbuzz(self, printFizzBuzz) -> None:
         while True:
             with self.condition:
-                while self.i <= self.n and self.i % 15 == 0:
+                while self.current <= self.n and self.current % 15 == 0:
                     printFizzBuzz()
-                    self.i += 1
+                    self.current += 1
                     self.condition.notify_all()
-                if self.i > self.n:
+
+                if self.current > self.n:
                     self.condition.notify_all()
                     return
+
                 self.condition.wait()
 
-    def number(self, printNumber):
+    def number(self, printNumber) -> None:
         while True:
             with self.condition:
-                while self.i <= self.n and self.i % 3 != 0 and self.i % 5 != 0:
-                    printNumber(self.i)
-                    self.i += 1
+                while self.current <= self.n and self.current % 3 != 0 and self.current % 5 != 0:
+                    printNumber(self.current)
+                    self.current += 1
                     self.condition.notify_all()
-                if self.i > self.n:
+
+                if self.current > self.n:
                     self.condition.notify_all()
                     return
+
                 self.condition.wait()
