@@ -2,15 +2,13 @@
 class MyHashSet:
 
     def __init__(self):
-        self.data = []
+        self.data = [False] * 1000001
 
     def add(self, key: int) -> None:
-        if key not in self.data:
-            self.data.append(key)
+        self.data[key] = True
 
     def remove(self, key: int) -> None:
-        if key in self.data:
-            self.data.remove(key)
+        self.data[key] = False
 
     def contains(self, key: int) -> bool:
-        return key in self.data
+        return self.data[key]
